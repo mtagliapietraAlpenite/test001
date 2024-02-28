@@ -6,16 +6,26 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+        // view dotata di barra laterale collassabile
+        NavigationView {
+            // aggiungo un titolo alla navigazione
             Text("Hello, world!")
+                .padding()
         }
-        .padding()
+//        // set the view in 2 columns
+//        HStack {
+//            // add a cloasble navigation view
+//            // make the navigation view closable by a button
+//            NavigationView {
+//                // add a title to the navigation view
+//                Text("Hello, world!")
+//                    .padding()
+//            }
+//            Text("Hello, world!")
+//                .padding()
+//        }
     }
 }
 
